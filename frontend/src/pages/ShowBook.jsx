@@ -24,7 +24,7 @@ const ShowBook = () => {
   }, []);
 
   return (
-    <div className="p-4 w-1/2 mx-auto max-md:w-full">
+    <div className="p-4 ">
       <BackBtn />
       <h1 className="text-3xl my-4">Show Book</h1>
       {loading ? (

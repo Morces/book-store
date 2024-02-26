@@ -25,7 +25,7 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const books = await Book.find({}).sort([["publishYear", "descending"]]);
+    const books = await Book.find({}).sort([["createdAt", "descending"]]);
     return res.status(200).json({ total: books.length, data: books });
   } catch (error) {
     console.log(error);
